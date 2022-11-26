@@ -424,7 +424,7 @@
         </ul>
       </div>
 
-<form class="footer-mailing">
+<form class="footer-form">
 <label for="footer-input" class="invitation-follow">Підпишіться на розсилку
 </label>
 <div class="footer-form-wrap">
@@ -433,31 +433,82 @@
     <button type="submit"
     class="button-footer footer-form-button">
       Підписатися
-      <svg class="footer-icon-subscribe" width="24" heigth="24">
-        <use href="./images/icons.svg#icon-subscribe"></use>
+      <svg class="footer-icon-subscribe" width="24" height="24">
+        <use href="images/icons-new.svg#icon-subscribe"></use>
       </svg>
     </button>
     </div>
+  </form>
 
 </div>
     
-
-    </div>
-
-
-
   </footer>
 
   <div data-modal class="backdrop is-hidden">
     <div class="modal">
       <button data-modal-close class="modal-close" type="button">
-        <svg class="modal-icon">
+        <svg class="modal-icon-close" width="11" height="11">
           <use href="images/icons.svg#icon-close"></use>
         </svg>
       </button>
-    </div>
+      <div class="modal-container">
+<p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+    <form class="modal-form">
+
+<div class="input-container">
+<label class="modal-label" for="user-name">Ім'я</label>
+<div class="modal-wrap">
+  <input class="modal-input" type="text" name="name" id="user-name"/>
+  <svg class="modal-icon">
+    <use href="./images/icons-new.svg#icon-user-name"></use>
+  </svg>
+</div>
+</div>
+
+<div class="input-container">
+<label class="modal-label" for="user-phone">Телефон</label>
+<div class="modal-wrap">
+  <input class="modal-input" type="tel" name="phone-number" id="user-phone"/>
+  <svg class="modal-icon">
+      <use href="./images/icons-new.svg#icon-user-phone"></use>
+  </svg>
+</div>
+</div>
+
+<div class="input-container">
+  <label class="modal-label" for="user-email">Пошта</label>
+  <div class="modal-wrap">
+    <input class="modal-input" type="email" name="email" id="user-email"/>
+    <svg class="modal-icon">
+      <use href="./images/icons-new.svg#icon-user-email"></use>
+    </svg>
   </div>
+</div>
+
+<div class="input-container">
+  <label class="modal-label" for="user-text">Коментар</label>
+<textarea class="modal-comment" name="comment" id="user-comment"
+placeholder="Введіть текст"></textarea>
+</div>
+
+<input class="terms visually-hidden" type="checkbox" name="terms" id="terms"/>
+<label class="terms-label" for="terms">
+  <span>
+    <svg class="terms-icon" width="16" height="15">
+      <use href="./images/icons-new.svg#icon-yes"></use>
+    </svg>
+  </span>
+  Погоджуюся з розсилкою та приймаю&nbsp
+  <a class="terms-link" href="" target="_blank" noreferrer noopener>Умови договору</a>
+</label>
+<button class="main-button modal-button" type="submit">Відправити</button>
+</form>
+</div>
+</div>
+</div>
+
   <script src="js/modal.js"></script>
+
 </body>
 
 </html>
